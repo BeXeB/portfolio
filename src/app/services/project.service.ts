@@ -56,7 +56,7 @@ export class ProjectService {
       name: 'Peregrination',
       description:
         `Peregrination is a game that teaches players the basics of programming.
-         It teache players the rudimentary building blocks of all programs, such as conditionals or loops.`,
+         It teaches players the rudimentary building blocks of all programs, such as conditionals or loops.`,
       imageUrl: '/assets/images/Peregrination.svg',
       repoUrl: 'https://github.com/BeXeB/RoverGame',
       projectUrl: 'https://bexeb.itch.io/peregrination',
