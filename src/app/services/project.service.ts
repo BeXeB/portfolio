@@ -73,6 +73,25 @@ export class ProjectService {
       projectUrl: 'https://bexeb.github.io/xlsx-converter/',
       fileName: 'xlsx-converter.md',
     },
+    {
+      slug: 'self-hosted-ai',
+      name: 'Self-Hosted AI',
+      description: 'I self hosted LLMs to create a private AI assistant that can run on my local machine, providing me with the benefits of AI without relying on external services.',
+      imageUrl: '/assets/images/self-hosted-ai.svg',
+      repoUrl: '',
+      projectUrl: '',
+      fileName: 'self-hosted-ai.md',
+    },
+    {
+      slug: 'genshin-database-and-guides-site',
+      name: 'Genshin Database and Guides Site',
+      description: 'A Hungarian database, wiki and guides site for the game Genshin Impact.',
+      imageUrl: '/assets/images/genshin-database-and-guides-site.svg',
+      repoUrl: 'https://github.com/BeXeB/genshin-site',
+      projectUrl: 'https://bexeb.github.io/genshin-site/',
+      fileName: 'genshin-database-site.md',
+    },
+
   ];
 
   private projectMap: Map<string, Project> = new Map();
