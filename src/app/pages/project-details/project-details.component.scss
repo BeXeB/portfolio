@@ -4,19 +4,26 @@
   @include button-base;
   padding: 10px 20px;
   margin: 13px 0px;
-  color: var(--white);
+  color: var(--text-primary);
   font-size: 1.2em;
 }
 
 .go-button:hover {
   @include hover-card;
-  border: 1px solid var(--gray);
+  // border: 1px solid var(--bg-hover);
 }
 
 .top-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.project-details {
+  background-color: var(--bg-surface-dark);
+  padding: 1px 20px 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--bg-hover);
 }
 
 .project-details ::ng-deep img {

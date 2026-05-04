@@ -1,12 +1,12 @@
 @import '../../../styles.scss';
 
 .nav-container {
-  background-color: var(--black);
+  background-color: var(--bg-surface-dark);
   position: sticky;
   top: 0;
   height: 65px;
   width: 100%;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--bg-hover);
   z-index: 1;
 }
 
@@ -28,7 +28,7 @@
 .social-links a {
   @include link-hover;
   margin-left: 15px;
-  color: var(--white);
+  color: var(--text-primary);
   font-size: 1.6em;
 }
 
@@ -42,31 +42,35 @@
   width: 120px;
   height: 40px;
   border: none;
-  color: var(--light-gray);
+  color: var(--text-primary);
+  border: 1px solid var(--bg-hover);
 }
 
 .nav-button:hover {
-  background-color: var(--darker-gray);
-  color: var(--white);
+  background-color: var(--bg-hover) !important;
+  border-color: var(--accent-bright);
+  border: 1px solid var(--accent-bright);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   transition: background-color 0.2s, color 0.2s;
+  transition: border-color 0.2s;
 }
 
 .nav-button.active {
-  background-color: var(--dark-gray);
-  color: var(--white);
+  background-color: var(--bg-surface);
+  border-color: var(--accent-bright);
 }
 
 .logo a {
   font-weight: bold;
   font-size: 2em;
-  color: var(--white);
+  color: var(--text-primary);
   text-decoration: none;
   letter-spacing: -4px;
   user-select: none;
 }
 
 .logo:hover a {
-  color: var(--blue);
+  color: var(--accent-primary);
   transition: color 0.2s;
 }
 
@@ -74,13 +78,13 @@
   display: none;
   background: none;
   border: none;
-  color: var(--white);
+  color: var(--text-primary);
   font-size: 1.5em;
   cursor: pointer;
   padding: 5px 10px;
 
   &:hover {
-    color: var(--blue);
+    color: var(--accent-primary);
     transition: color 0.2s;
   }
 }
@@ -107,12 +111,12 @@
     flex-direction: column;
 
     margin: 0 -20px;
-    background-color: var(--black);
+    background-color: var(--bg-surface-dark);
     overflow: hidden;
     transition: height 0.2s ease;
 
     &.mobile-menu-open {
-      border-bottom: 1px solid var(--gray);
+      border-bottom: 1px solid var(--bg-hover);
       height: 150px;
     }
   }
@@ -122,7 +126,7 @@
     height: 100%;
     border-radius: 0;
     border: none;
-    border-top: 1px solid var(--gray);
+    border-top: 1px solid var(--bg-hover);
   }
 
   .social-links {

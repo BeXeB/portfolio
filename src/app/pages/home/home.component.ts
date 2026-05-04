@@ -11,6 +11,6 @@ import { RouterLink } from "@angular/router";
 export class HomeComponent {
 
   openCV() {
-    window.open('https://github.com/BeXeB/CV/blob/main/CVs/Bence_CV_DK.pdf', '_blank');
+    window.open('https://github.com/BeXeB/CV/blob/main/CVs/Bence_CV_HU_EN.pdf', '_blank');
   }
 }

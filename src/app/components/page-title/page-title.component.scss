@@ -21,10 +21,11 @@
 
   width: 30px;
   height: 30px;
-  background-color: var(--darker-gray);
+  background-color: var(--bg-surface-dark);
 }
 
 .title .back-button:hover {
-  background-color: var(--dark-gray);
-  transition: background-color 0.2s;
+  background-color: var(--bg-hover);
+  border-color: var(--accent-bright);
+  transition: background-color 0.2s, border-color 0.2s;
 }

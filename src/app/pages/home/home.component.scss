@@ -1,26 +1,14 @@
 @import '../../../styles.scss';
 
-.background {
-  width: 100%;
-  height: calc(100vh - 66px);
-  background-size: cover;
-  z-index: -1;
-  background-image:
-    radial-gradient(circle at top 50px left 50px, var(--shadow-blue), transparent 25%),
-    radial-gradient(circle at bottom 50px right 50px, var(--shadow-blue), transparent 25%);
-
-  position: fixed;
-}
-
 .logo {
   margin: 5vh auto 0 auto;
   max-width: 200px;
   padding: 50px;
-  background-image: radial-gradient(circle, var(--shadow-blue), transparent 50%);
+  background-image: radial-gradient(circle, var(--shadow), transparent 50%);
 }
 
 .logo:hover {
-  background-image: radial-gradient(circle, var(--shadow-blue), transparent 60%);
+  background-image: radial-gradient(circle, var(--shadow), transparent 60%);
   transform: scale(1.02);
   transition: transform 0.2s ease, background-image 0.2s ease;
 }
@@ -30,7 +18,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 6em;
-  color: var(--white);
+  color: var(--text-primary);
   letter-spacing: -0.14em;
   transform: translateX(-0.07em);
 }
@@ -89,9 +77,9 @@
   flex:1;
   height: 100%;
   min-height: 200px;
-  background-color: var(--black);
+  background-color: var(--bg-surface-dark);
   border-radius: 8px;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--bg-surface);
   padding: 10px;
 }
 
@@ -101,12 +89,12 @@
 
 .link-card-title {
   font-size: 2em;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .link-card-subtitle {
   font-size: 1em;
-  color: var(--light-gray);
+  color: var(--text-secondary);
 }
 
 

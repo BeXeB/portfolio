@@ -11,8 +11,8 @@ export class ProjectService {
     {
       slug: 'angular-portfolio',
       name: 'Angular Portfolio',
-      description:
-        'A portfolio website built with Angular to showcase my projects.',
+      description: `My portfolio website built with Angular to showcase projects.
+        It uses markdown files to store project details, which are loaded and rendered dynamically.`,
       imageUrl: '/assets/images/Angular.svg',
       repoUrl: 'https://github.com/BeXeB/BeXeB.github.io',
       projectUrl: 'https://bexeb.github.io/',
@@ -21,8 +21,7 @@ export class ProjectService {
     {
       slug: 'graphite',
       name: 'Graphite',
-      description:
-        `A custom object-oriented programming language
+      description: `A custom object-oriented programming language
         focused on simplifying graph manipulation with specialized operations
         and enabling graph visualization through DOT integration.`,
       imageUrl: '/assets/images/Graphite.svg',
@@ -32,8 +31,7 @@ export class ProjectService {
     {
       slug: 'sc2-bot',
       name: 'MontyBot',
-      description:
-        `An intelligent agent capable of playing StarCraft II.
+      description: `An intelligent agent capable of playing StarCraft II.
         The agent utilizes Monte-Carlo Tree Search for Action selection
         and Neural Networks to analyze the state of the game.`,
       imageUrl: '/assets/images/MontyBot.svg',
@@ -43,8 +41,7 @@ export class ProjectService {
     {
       slug: 'programmable-behaviours',
       name: 'Programmable Behaviours',
-      description:
-        `A system which allows developers to expose the code of objects,
+      description: `A system which allows developers to expose the code of objects,
         allowing players to interactively modify in-game behaviour
         through a custom scripting language.`,
       imageUrl: '/assets/images/ProgrammableBehaviours.svg',
@@ -54,9 +51,8 @@ export class ProjectService {
     {
       slug: 'peregrination',
       name: 'Peregrination',
-      description:
-        `Peregrination is a game that teaches players the basics of programming.
-         It teaches players the rudimentary building blocks of all programs, such as conditionals or loops.`,
+      description: `Peregrination is a game that teaches players the basics of programming.
+         It introduces players the building blocks of all programs, such as statements, conditionals and loops.`,
       imageUrl: '/assets/images/Peregrination.svg',
       repoUrl: 'https://github.com/BeXeB/RoverGame',
       projectUrl: 'https://bexeb.itch.io/peregrination',
@@ -65,9 +61,8 @@ export class ProjectService {
     {
       slug: 'xlsx-converter',
       name: 'XLSX Converter',
-      description:
-        `I created this XLSX converter to help teachers at my elementary school quickly
-        convert their existing spreadsheets into the format needed for the digital platform.`,
+      description: `A tool that converts XLSX files of a custom format into a
+      format suitable to import into a digital platform.`,
       imageUrl: '/assets/images/xlsx-converter.svg',
       repoUrl: 'https://github.com/BeXeB/xlsx-converter',
       projectUrl: 'https://bexeb.github.io/xlsx-converter/',
@@ -76,7 +71,8 @@ export class ProjectService {
     {
       slug: 'self-hosted-ai',
       name: 'Self-Hosted AI',
-      description: 'I self hosted LLMs to create a private AI assistant that can run on my local machine, providing me with the benefits of AI without relying on external services.',
+      description: `Experimenting with running LLMs locally using Ollama and LM Studio to reduce reliance on third-party APIs. Exploring the capabilities
+        and limitations of the models that can be run on consumer hardware.`,
       imageUrl: '/assets/images/self-hosted-ai.svg',
       repoUrl: '',
       projectUrl: '',
@@ -84,14 +80,14 @@ export class ProjectService {
     },
     {
       slug: 'genshin-database-and-guides-site',
-      name: 'Genshin Database and Guides Site',
-      description: 'A Hungarian database, wiki and guides site for the game Genshin Impact.',
+      name: 'Game Wiki Site (Genshin Impact)',
+      description: `A Hungarian guide and wiki site for the game Genshin Impact,
+        featuring character builds and gamepaly guides.`,
       imageUrl: '/assets/images/genshin-database-and-guides-site.svg',
       repoUrl: 'https://github.com/BeXeB/genshin-site',
       projectUrl: 'https://bexeb.github.io/genshin-site/',
       fileName: 'genshin-database-site.md',
     },
-
   ];
 
   private projectMap: Map<string, Project> = new Map();

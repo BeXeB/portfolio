@@ -2,21 +2,24 @@
 
 ## About
 
-Peregrination is a game that takes the player to a far-off alien world. You are tasked to assist the newest rover on the planet in discovering alien life.
+Peregrination teaches programming fundamentals—conditionals, loops, and problem-solving—through a rover navigation puzzle game. Players solve increasingly difficult levels to discover alien life on an unexplored planet.
 
-The purpose of the game is to teach players the basics of programming. It will teach players the rudimentary building blocks of all programs, such as conditionals or loops. Using these blocks the player can navigate the rover through increasingly difficult levels.
+---
+
+## Gameplay
+
+Players program the rover using a block-based visual interface, similar to Lego Mindstorms. You select action blocks sequentially (move, turn, check sensor) and they execute in order. The key constraint: limited blocks per level forces efficient programming—you need to use loops instead of repeating commands.
 
 ---
 
 ## Features
 
-- Conditionals
-- Loops
-- 2 types of obstacles: Rocks and Pits
-- Sensor to detect Pits
-- 8 built in levels
-- A level editor
-- Import Levels from an encoded string
+- Block-based programming with visual UI
+- Conditionals and loops as core mechanics
+- 2 obstacle types: Rocks and Pits with pit detection sensor
+- 8 built-in campaign levels
+- Level editor for custom puzzles
+- Import/export levels via encoded strings
 
 ---
 
@@ -30,5 +33,5 @@ The purpose of the game is to teach players the basics of programming. It will t
 
 ## Tech Stack
 
-- **C#**
-- **Unity**
+- C#
+- Unity
