@@ -10,12 +10,19 @@ The project was designed around the idea of teaching programming concepts throug
 
 ## The Language
 
-The system is built around a purpose-designed high-level language called See--, implemented from scratch with a full interpreter pipeline:
+See-- is a custom language designed specifically for the gameplay context. Rather than embedding a general-purpose language, a custom language lets us:
 
-- Lexer: tokenizes player-written code  
-- Parser: generates an abstract syntax tree  
-- Resolver: performs scope + static type checking  
-- Interpreter: executes scripts at runtime  
+- Expose only safe, gameplay-relevant functions and variables
+- Control what players can access (no filesystem, network, or engine internals)
+- Optimize the learning experience with familiar syntax
+- Maintain tight integration with game systems
+
+Implemented from scratch with a complete pipeline:
+
+- Lexer: tokenizes code  
+- Parser: generates AST  
+- Resolver: scope + static type checking  
+- Interpreter: runtime execution  
 
 ---
 
@@ -23,31 +30,19 @@ The system is built around a purpose-designed high-level language called See--, 
 
 A key part of the project is the connection between the custom scripting language and Unity gameplay systems.
 
-To enable player-written code to affect the game world, the project introduces an interface layer between the interpreter and Unity objects.
+The interpreter connects to Unity through an interface layer that exposes only safe, controlled functionality.
 
-### Exposed Variables and Functions
+### Exposed API
 
-Game objects (such as turrets and other defences) expose a controlled set of variables and callable methods to the scripting environment.
+Game objects expose a curated set of variables and functions to scripts. These are registered in the global scope, allowing scripts to interact with gameplay systems without accessing engine internals.
 
-These are registered in the global scope, allowing scripts to directly interact with gameplay systems without accessing internal engine code.
+### Runtime Behaviour Modification
 
-### Event-Driven Behaviour Modification
-
-Rather than hard-coding interactions, the system uses an event-based approach:
-
-- Variable updates trigger `onChange` events  
-- Function calls raise events that Unity components respond to  
-- Object behaviour changes immediately during runtime  
-
-This allows scripts to dynamically modify gameplay logic while keeping the underlying Unity code stable and secure.
+Variable changes and function calls trigger events that Unity components respond to, allowing scripts to modify game logic dynamically while keeping the underlying code stable and secure.
 
 ### External Function Framework
 
-To allow See-- scripts to interact with Unity objects, the project introduces an `ExternalFunction` system.
-
-Each gameplay action that players can call (such as changing turret aim or disabling a defence) is implemented as a dedicated C# function class. These external functions are registered in the scripting environment’s global scope and act as a safe bridge between interpreted code and Unity behaviour.
-
-This modular design makes it easy to expand the scripting API with new hackable behaviours without modifying the interpreter core.
+Each gameplay action (turret aim, defence disable, etc.) is a dedicated C# function class. These external functions act as a safe bridge between interpreted scripts and Unity behaviour, making the API easy to extend without modifying the interpreter.
 
 ---
 

@@ -1,0 +1,22 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- left page -->
+  <path d="M40 40 Q60 30 80 40 V80 Q60 70 40 80 Z" stroke="white" stroke-width="2"/>
+
+  <!-- right page -->
+  <path d="M120 40 Q100 30 80 40 V80 Q100 70 120 80 Z" stroke="white" stroke-width="2"/>
+
+  <!-- center fold -->
+  <line x1="80" y1="40" x2="80" y2="80" stroke="white" stroke-width="1"/>
+
+  <!-- left page scribbles -->
+  <path d="M50 47 Q60 42 70 47" stroke="white" stroke-width="1"/>
+  <path d="M50 55 Q60 50 70 55" stroke="white" stroke-width="1"/>
+  <path d="M50 63 Q60 58 70 63" stroke="white" stroke-width="1"/>
+
+  <!-- right page scribbles -->
+  <path d="M90 47 Q100 42 110 47" stroke="white" stroke-width="1"/>
+  <path d="M90 55 Q100 50 110 55" stroke="#007BFF" stroke-width="1"/>
+  <path d="M90 63 Q100 58 110 63" stroke="white" stroke-width="1"/>
+
+</svg>
