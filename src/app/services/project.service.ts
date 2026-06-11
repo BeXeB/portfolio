@@ -14,8 +14,8 @@ export class ProjectService {
       description: `My portfolio website built with Angular to showcase projects.
         It uses markdown files to store project details, which are loaded and rendered dynamically.`,
       imageUrl: '/assets/images/Angular.svg',
-      repoUrl: 'https://github.com/BeXeB/BeXeB.github.io',
-      projectUrl: 'https://bexeb.github.io/',
+      repoUrl: 'https://github.com/BeXeB/portfolio',
+      projectUrl: 'https://me.bexe.dev/',
       fileName: 'angular-portfolio.md',
     },
     {
@@ -65,7 +65,7 @@ export class ProjectService {
       format suitable to import into a digital platform.`,
       imageUrl: '/assets/images/xlsx-converter.svg',
       repoUrl: 'https://github.com/BeXeB/xlsx-converter',
-      projectUrl: 'https://bexeb.github.io/xlsx-converter/',
+      projectUrl: 'https://bexe.dev/xlsx-converter/',
       fileName: 'xlsx-converter.md',
     },
     {
@@ -85,7 +85,7 @@ export class ProjectService {
         featuring character builds and gamepaly guides.`,
       imageUrl: '/assets/images/genshin-database-and-guides-site.svg',
       repoUrl: 'https://github.com/BeXeB/genshin-site',
-      projectUrl: 'https://bexeb.github.io/genshin-site/',
+      projectUrl: 'https://kk.bexe.dev/',
       fileName: 'genshin-database-site.md',
     },
   ];
